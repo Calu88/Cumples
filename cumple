@@ -5,36 +5,168 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Calendario de Cumpleaños</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f7f6; color: #333; margin: 0; padding: 20px; }
-        .container { max-width: 800px; margin: 0 auto; }
-        h1 { text-align: center; color: #2c3e50; }
-        .mes-card { background: white; padding: 20px; margin-bottom: 15px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
-        .mes-titulo { font-size: 1.4rem; color: #3498db; margin-top: 0; border-bottom: 2px solid #ecf0f1; padding-bottom: 5px; }
-        ul { list-style: none; padding: 0; }
-        li { padding: 8px 0; border-bottom: 1px dashed #eee; display: flex; justify-content: space-between; }
-        li:last-child { border-bottom: none; }
-        .fecha { font-weight: bold; color: #e74c3c; }
+        *, *::before, *::after { box-sizing: border-box; }
+        body { 
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; 
+            background-color: #f8fafc; 
+            color: #1e293b; 
+            margin: 0; 
+            padding: 20px; 
+            display: flex;
+            justify-content: center;
+        }
+        .container { 
+            width: 100%;
+            max-width: 600px; 
+            margin: 0 auto; 
+        }
+        header {
+            text-align: center;
+            padding: 20px 0 30px 0;
+        }
+        h1 { 
+            color: #0f172a; 
+            font-size: 1.8rem;
+            margin: 0 0 8px 0;
+        }
+        p.subtitle {
+            color: #64748b;
+            margin: 0;
+            font-size: 0.95rem;
+        }
+        .mes-card { 
+            background: white; 
+            padding: 20px; 
+            margin-bottom: 16px; 
+            border-radius: 12px; 
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05), 0 1px 2px rgba(0,0,0,0.02);
+            border: 1px solid #e2e8f0;
+        }
+        .mes-titulo { 
+            font-size: 1.2rem; 
+            color: #2563eb; 
+            margin-top: 0; 
+            margin-bottom: 12px;
+            padding-bottom: 6px;
+            border-bottom: 2px solid #eff6ff; 
+        }
+        ul { 
+            list-style: none; 
+            padding: 0; 
+            margin: 0;
+        }
+        li { 
+            padding: 10px 0; 
+            border-bottom: 1px solid #f1f5f9; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center;
+        }
+        li:last-child { 
+            border-bottom: none; 
+        }
+        .nombre {
+            font-weight: 500;
+            color: #334155;
+        }
+        .fecha { 
+            font-weight: 600; 
+            color: #e11d48; 
+            background-color: #fff1f2;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+        }
+        .mes-vacio {
+            color: #94a3b8;
+            font-size: 0.9rem;
+            font-style: italic;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>🎉 Calendario de Cumpleaños 🎉</h1>
+        <header>
+            <h1>🎉 Mi Calendario de Cumpleaños 🎉</h1>
+            <p class="subtitle">Lista permanente de fechas importantes</p>
+        </header>
         
         <div class="mes-card">
             <h2 class="mes-titulo">Enero</h2>
             <ul>
-                <li><span>Carlos Gómez</span> <span class="fecha">05 Ene</span></li>
-                <li><span>María López</span> <span class="fecha">18 Ene</span></li>
+                <li><span class="nombre">Carlos</span> <span class="fecha">10 Ene</span></li>
             </ul>
         </div>
 
         <div class="mes-card">
             <h2 class="mes-titulo">Febrero</h2>
+            <div class="mes-vacio">No hay cumpleaños registrados</div>
+        </div>
+
+        <div class="mes-card">
+            <h2 class="mes-titulo">Marzo</h2>
+            <div class="mes-vacio">No hay cumpleaños registrados</div>
+        </div>
+
+        <div class="mes-card">
+            <h2 class="mes-titulo">Abril</h2>
             <ul>
-                <li><span>Tu Amigo Juan</span> <span class="fecha">14 Feb</span></li>
+                <li><span class="nombre">Fatima</span> <span class="fecha">17 Abr</span></li>
             </ul>
         </div>
 
+        <div class="mes-card">
+            <h2 class="mes-titulo">Mayo</h2>
+            <ul>
+                <li><span class="nombre">Pech</span> <span class="fecha">19 May</span></li>
+                <li><span class="nombre">Katia</span> <span class="fecha">23 May</span></li>
+                <li><span class="nombre">Botes</span> <span class="fecha">28 May</span></li>
+            </ul>
         </div>
+
+        <div class="mes-card">
+            <h2 class="mes-titulo">Junio</h2>
+            <ul>
+                <li><span class="nombre">Erika</span> <span class="fecha">11 Jun</span></li>
+                <li><span class="nombre">Adrian</span> <span class="fecha">12 Jun</span></li>
+            </ul>
+        </div>
+
+        <div class="mes-card">
+            <h2 class="mes-titulo">Julio</h2>
+            <div class="mes-vacio">No hay cumpleaños registrados</div>
+        </div>
+
+        <div class="mes-card">
+            <h2 class="mes-titulo">Agosto</h2>
+            <ul>
+                <li><span class="nombre">Jorge</span> <span class="fecha">21 Ago</span></li>
+                <li><span class="nombre">Diana</span> <span class="fecha">22 Ago</span></li>
+            </ul>
+        </div>
+
+        <div class="mes-card">
+            <h2 class="mes-titulo">Septiembre</h2>
+            <div class="mes-vacio">No hay cumpleaños registrados</div>
+        </div>
+
+        <div class="mes-card">
+            <h2 class="mes-titulo">Octubre</h2>
+            <ul>
+                <li><span class="nombre">Alan</span> <span class="fecha">06 Oct</span></li>
+            </ul>
+        </div>
+
+        <div class="mes-card">
+            <h2 class="mes-titulo">Noviembre</h2>
+            <div class="mes-vacio">No hay cumpleaños registrados</div>
+        </div>
+
+        <div class="mes-card">
+            <h2 class="mes-titulo">Diciembre</h2>
+            <div class="mes-vacio">No hay cumpleaños registrados</div>
+        </div>
+
+    </div>
 </body>
 </html>
