@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Calendario de Cumpleaños</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f7f6; color: #333; margin: 0; padding: 20px; }
+        .container { max-width: 800px; margin: 0 auto; }
+        h1 { text-align: center; color: #2c3e50; }
+        .mes-card { background: white; padding: 20px; margin-bottom: 15px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        .mes-titulo { font-size: 1.4rem; color: #3498db; margin-top: 0; border-bottom: 2px solid #ecf0f1; padding-bottom: 5px; }
+        ul { list-style: none; padding: 0; }
+        li { padding: 8px 0; border-bottom: 1px dashed #eee; display: flex; justify-content: space-between; }
+        li:last-child { border-bottom: none; }
+        .fecha { font-weight: bold; color: #e74c3c; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎉 Calendario de Cumpleaños 🎉</h1>
+        
+        <div class="mes-card">
+            <h2 class="mes-titulo">Enero</h2>
+            <ul>
+                <li><span>Carlos Gómez</span> <span class="fecha">05 Ene</span></li>
+                <li><span>María López</span> <span class="fecha">18 Ene</span></li>
+            </ul>
+        </div>
+
+        <div class="mes-card">
+            <h2 class="mes-titulo">Febrero</h2>
+            <ul>
+                <li><span>Tu Amigo Juan</span> <span class="fecha">14 Feb</span></li>
+            </ul>
+        </div>
+
+        </div>
+</body>
+</html>
